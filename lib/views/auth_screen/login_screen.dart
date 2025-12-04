@@ -131,7 +131,8 @@ class LoginScreen extends StatelessWidget {
                 CustomButton(
                   text: "Log in",
                   onPressed: () {
-                    if (_formkey.currentState!.validate()) {}
+                    Get.toNamed(Routes.homeScreen);
+                    //if (_formkey.currentState!.validate()) {}
                   },
                 ),
               ],

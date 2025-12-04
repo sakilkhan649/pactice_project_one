@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:newproject/utils/app_images/app_images.dart';
+import '../../core/routs/routs.dart';
 import '../../widgets/Custom_Button.dart';
 import '../../widgets/Custom_Text.dart';
 
@@ -38,7 +40,7 @@ class SuccessScreen extends StatelessWidget {
               CustomButton(
                 text: "Back to home",
                 onPressed: () {
-                  // Get.toNamed(Routes.successScreen);
+                  Get.toNamed(Routes.homeScreen);
                 },
               ),
             ],
