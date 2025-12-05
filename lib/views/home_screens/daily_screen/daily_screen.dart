@@ -400,7 +400,112 @@ class DailyScreen extends StatelessWidget {
                       ),
                     ),
 
-
+                    Row(
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Obx(
+                                  () => Checkbox(
+                                    value: isCheckedOne.value,
+                                    onChanged: (bool? value) {
+                                      if (value != null) {
+                                        isCheckedOne.value = value;
+                                      }
+                                    },
+                                    side: BorderSide(
+                                      color: Colors.white,
+                                      width: 2,
+                                    ),
+                                    activeColor: Colors.grey,
+                                  ),
+                                ),
+                                CustomText(
+                                  text: "Placeholder",
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Obx(
+                                  () => Checkbox(
+                                    value: isCheckedTwo.value,
+                                    onChanged: (bool? value) {
+                                      if (value != null) {
+                                        isCheckedTwo.value = value;
+                                      }
+                                    },
+                                    side: BorderSide(
+                                      color: Colors.white,
+                                      width: 2,
+                                    ),
+                                    activeColor: Colors.grey,
+                                  ),
+                                ),
+                                CustomText(
+                                  text: "Leg Day Advanced",
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Row(
+                              children: [
+                                Obx(
+                                  () => Checkbox(
+                                    value: isCheckedThree.value,
+                                    onChanged: (bool? value) {
+                                      if (value != null) {
+                                        isCheckedThree.value = value;
+                                      }
+                                    },
+                                    side: BorderSide(
+                                      color: Colors.white,
+                                      width: 2,
+                                    ),
+                                    activeColor: Colors.grey,
+                                  ),
+                                ),
+                                CustomText(
+                                  text: "Push Fullbody",
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Obx(
+                                  () => Checkbox(
+                                    value: isCheckedFour.value,
+                                    onChanged: (bool? value) {
+                                      if (value != null) {
+                                        isCheckedFour.value = value;
+                                      }
+                                    },
+                                    side: BorderSide(
+                                      color: Colors.white,
+                                      width: 2,
+                                    ),
+                                    activeColor: Colors.grey,
+                                  ),
+                                ),
+                                CustomText(
+                                  text: "Training plan 1",
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
