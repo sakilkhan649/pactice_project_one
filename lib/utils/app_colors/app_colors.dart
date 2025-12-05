@@ -10,4 +10,5 @@ class AppColors{
   static const gray200=Color(0xFFB7B1B1);
   static const tiya100=Color(0xFF4C9A4E);
   static const tiya200=Color(0xFF2F422F);
+  static const black100=Color(0xFF060615);
 }

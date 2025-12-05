@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:newproject/utils/app_colors/app_colors.dart';
+import '../utils/app_colors/app_colors.dart';
 
 class Customtextfield extends StatelessWidget {
   final TextEditingController controller;
@@ -12,6 +12,7 @@ class Customtextfield extends StatelessWidget {
   final InputBorder? inputBorder;
   final String? Function(String?)? validator;
   final TextStyle? inputTextStyle;
+  final EdgeInsetsGeometry? contentPadding;
 
   Customtextfield({
     super.key,
@@ -20,42 +21,53 @@ class Customtextfield extends StatelessWidget {
     required this.controller,
     required this.hintText,
     this.suffixIcon,
-    this.prefixIcon,
     required this.obscureText,
     required this.textInputType,
     this.validator,
+    this.prefixIcon,
+    this.contentPadding,
   });
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.centerLeft,
-      constraints: BoxConstraints(minHeight: 49.h),
-      child: TextFormField(
-        style: inputTextStyle ?? TextStyle(color: Colors.white),
-        cursorColor: Colors.white,
-        validator: validator,
-        controller: controller,
-        keyboardType: textInputType,
-        obscureText: obscureText,
-        decoration: InputDecoration(
-          hintText: hintText,
-          filled: true,
-          fillColor: AppColors.blue200,
-          hintStyle: TextStyle(color: Colors.white70),
-          suffixIcon: suffixIcon,
-          prefixIcon: prefixIcon,
-          border: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.white12),
-            borderRadius: BorderRadius.all(Radius.circular(12.r)),
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.white12),
-            borderRadius: BorderRadius.all(Radius.circular(12.r)),
-          ),
-          errorStyle: TextStyle(
-            color: Colors.red,
-            fontSize: 12.sp,
-          ),
+    return TextFormField(
+      style: inputTextStyle ?? TextStyle(color: Colors.white),
+      cursorColor: Colors.white,
+      validator: validator,
+      controller: controller,
+      keyboardType: textInputType,
+      obscureText: obscureText,
+      decoration: InputDecoration(
+        border: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.white12, width: 1.5),
+          borderRadius: BorderRadius.all(Radius.circular(12.r)),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.white12, width: 1.5),
+          borderRadius: BorderRadius.all(Radius.circular(12.r)),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.white12, width: 2),
+          borderRadius: BorderRadius.all(Radius.circular(12.r)),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.red, width: 1.5),
+          borderRadius: BorderRadius.all(Radius.circular(12.r)),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.red, width: 2),
+          borderRadius: BorderRadius.all(Radius.circular(12.r)),
+        ),
+        hintText: hintText,
+        filled: true,
+        fillColor: AppColors.blue200,
+        hintStyle: TextStyle(color: Colors.grey),
+        suffixIcon: suffixIcon,
+        prefixIcon: prefixIcon,
+        errorStyle: TextStyle(color: Colors.red, fontSize: 12.sp),
+        contentPadding:contentPadding ?? EdgeInsets.symmetric(
+          horizontal: 15.w,
+          vertical: 15.h,
         ),
       ),
     );

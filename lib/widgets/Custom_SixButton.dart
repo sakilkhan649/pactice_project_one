@@ -4,12 +4,11 @@ import '../utils/app_colors/app_colors.dart';
 
 class CustomSmallButton extends StatelessWidget {
   final String label;
-  final VoidCallback onTap;
 
   const CustomSmallButton({
     super.key,
     required this.label,
-    required this.onTap,
+
   });
 
   @override
@@ -17,32 +16,17 @@ class CustomSmallButton extends StatelessWidget {
     return Container(
       height: 20.h,
       width: 26.w,
+      alignment: Alignment.center,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8.w),
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: AppColors.tiya100,width: 1)
       ),
-      child: TextButton(
-        onPressed: onTap,
-        style: TextButton.styleFrom(
-          backgroundColor: AppColors.blue400,
-          foregroundColor: AppColors.tiya100,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8.r),
-            side: BorderSide(
-              color: AppColors.tiya100,
-              width: 1.w,
-            ),
-          ),
-          padding: EdgeInsets.symmetric(
-            horizontal: 10.w,
-            vertical: 1.w,
-          ),
-        ),
-        child: Text(
-          label,
-          style: TextStyle(
-            fontSize: 12.sp,
-            fontWeight: FontWeight.normal,
-          ),
+      child: Text(
+        label,
+        style: TextStyle(
+          fontSize: 12,
+          color: AppColors.tiya100,
+          fontWeight: FontWeight.normal,
         ),
       ),
     );

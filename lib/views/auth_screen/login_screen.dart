@@ -17,6 +17,7 @@ class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
 
   final _formkey = GlobalKey<FormState>();
+
   final isPasswordVisible = false.obs;
 
   final emailController = TextEditingController();

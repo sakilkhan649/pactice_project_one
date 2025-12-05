@@ -28,8 +28,8 @@ class CustomBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: height ?? 74.h,
-      width: width ?? double.infinity,
-      padding: padding ?? EdgeInsets.fromLTRB(13.w, 7.w, 16.w, 7.w),
+      width: width ?? double.maxFinite,
+       padding: padding ?? EdgeInsets.fromLTRB(13, 7, 16, 7),
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(borderRadius.r),

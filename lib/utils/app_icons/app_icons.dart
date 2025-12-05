@@ -14,5 +14,8 @@ class AppIcons {
   static const String wdigthicon="$iconurl/wdigthicon.svg";
   static const String sleepicon="$iconurl/sleepicon.svg";
   static const String sickicon="$iconurl/sickicon.svg";
+  static const String dopicon="$iconurl/dopicon.svg";
+  static const String homeicon="$iconurl/homeicon.svg";
+  static const String traningicon="$iconurl/traningicon.svg";
 
 }
