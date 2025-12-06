@@ -8,6 +8,10 @@ class DailyScreenController extends GetxController {
   final RxDouble countFour = 5.0.obs;
   final RxDouble countFive = 5.0.obs;
   final RxDouble countSix = 5.0.obs;
+  final RxDouble countSeven = 5.0.obs;
+  final RxDouble counteight = 5.0.obs;
+  final RxDouble countnine = 5.0.obs;
+  final RxDouble countten = 5.0.obs;
 
   RxBool isSick = true.obs;
 

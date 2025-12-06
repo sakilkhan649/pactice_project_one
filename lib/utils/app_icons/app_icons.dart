@@ -17,5 +17,9 @@ class AppIcons {
   static const String dopicon="$iconurl/dopicon.svg";
   static const String homeicon="$iconurl/homeicon.svg";
   static const String traningicon="$iconurl/traningicon.svg";
+  static const String dopdownicon="$iconurl/dopdownicon.svg";
+  static const String nutritionicon="$iconurl/nutritionicon.svg";
+  static const String womenicon="$iconurl/womenicon.svg";
+  static const String fontisto_blood="$iconurl/fontisto_blood.svg";
 
 }

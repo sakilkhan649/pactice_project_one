@@ -58,8 +58,8 @@ class LoginScreen extends StatelessWidget {
                     padding: const EdgeInsets.all(10),
                     child: SvgPicture.asset(
                       AppIcons.emailicon,
-                      height: 8.h,
-                      width: 8.w,
+                      height: 4.h,
+                      width: 4.w,
                     ),
                   ),
                   controller: emailController,
@@ -85,8 +85,8 @@ class LoginScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(10),
                       child: SvgPicture.asset(
                         AppIcons.passwordicon,
-                        height: 8.h,
-                        width: 8.w,
+                        height: 4.h,
+                        width: 4.w,
                       ),
                     ),
                     suffixIcon: IconButton(
