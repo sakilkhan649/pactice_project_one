@@ -21,8 +21,8 @@ import 'controller/daily_screen_controller.dart';
 class DailyScreen extends StatelessWidget {
   DailyScreen({super.key});
 
-  final DailyScreenController _controller = Get.find<DailyScreenController>();
-  final DopdownController _dopdownController = Get.find<DopdownController>();
+  final DailyScreenController _controller = Get.put(DailyScreenController());
+  final DopdownController _dopdownController = Get.put(DopdownController());
 
   final weigthContoller = TextEditingController();
   final sleepContoller = TextEditingController();

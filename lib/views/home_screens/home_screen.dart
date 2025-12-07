@@ -14,7 +14,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final BottomNabBarController _controller = Get.find<BottomNabBarController>();
+  final BottomNabBarController _controller = Get.put(BottomNabBarController());
 
   List<String> icons = [
     AppIcons.dailyicon,

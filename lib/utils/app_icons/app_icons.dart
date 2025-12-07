@@ -1,5 +1,4 @@
 class AppIcons {
-
   static const String iconurl="assets/icons";
   static const String back_icon="$iconurl/back_button.svg";
   static const String emailicon="$iconurl/emailicon.svg";
@@ -21,5 +20,14 @@ class AppIcons {
   static const String nutritionicon="$iconurl/nutritionicon.svg";
   static const String womenicon="$iconurl/womenicon.svg";
   static const String fontisto_blood="$iconurl/fontisto_blood.svg";
+  static const String profile_task="$iconurl/profile_task.svg";
+  static const String photo_task="$iconurl/photo_task.svg";
+  static const String question_task="$iconurl/question_task.svg";
+  static const String checking_task="$iconurl/checking_task.svg";
+  static const String capicon="$iconurl/capicon.svg";
+  static const String mingcute_file_icon="$iconurl/mingcute_file_icon.svg";
+  static const String gellary_icon="$iconurl/gellary_icon.svg";
+  static const String video_play_icon="$iconurl/video_play_icon.svg";
+  static const String cloudArrowUp="$iconurl/cloudArrowUp.svg";
 
 }
