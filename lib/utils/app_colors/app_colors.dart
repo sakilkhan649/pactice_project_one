@@ -1,16 +1,25 @@
 import 'dart:ui';
-
 class AppColors{
   static const blue100=Color(0xFF161650);
   static const blue200=Color(0xFF08081A);
   static const blue300=Color(0xFF8080EE);
   static const blue400=Color(0xFF101021);
   static const blue500=Color(0xFF0A0A1F);
+  static const blue700=Color(0xFF09579A);
   static const gray100=Color(0xFF8E8E8E);
   static const gray200=Color(0xFFB7B1B1);
+  static const gray300=Color(0xFFCFB8B8);
   static const tiya100=Color(0xFF4C9A4E);
   static const tiya200=Color(0xFF2F422F);
   static const black100=Color(0xFF060615);
+  static const black300=Color(0xFF30303D);
+  static const black200=Color(0xFF1A1A1A);
   static const tiya300=Color(0xFF416B42);
   static const blue600=Color(0xFF26263B);
+  static const orenge100=Color(0xFFC7A1A1);
+  static const orenge200=Color(0xFF936E19);
+  static const orenge300=Color(0xFF773D12);
+  static const green100=Color(0xFF294328);
+  static const green200=Color(0xFF43A047);
+  static const orenge400=Color(0xFFFC9502);
 }

@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
     AppIcons.profileicon,
   ];
 
-  List<String> labels = ["Daily", "Tasks", "Reports", "Meals", "Profile"];
+  List<String> labels = ["Daily", "Tasks", "Training", "Meals", "Profile"];
 
   @override
   Widget build(BuildContext context) {

@@ -6,6 +6,8 @@ import 'package:newproject/views/auth_screen/otp_screen.dart';
 import 'package:newproject/views/auth_screen/splash_screen.dart';
 import 'package:newproject/views/auth_screen/success_screen.dart';
 import 'package:newproject/views/home_screens/daily_screen/daily_screen.dart';
+import 'package:newproject/views/home_screens/training_screen/exercises_screens/exercises_screen.dart';
+import 'package:newproject/views/home_screens/training_screen/exercises_screens/vedio_screen/vedio_screen.dart';
 
 import '../../views/home_screens/home_screen.dart';
 
@@ -17,6 +19,8 @@ class Routes {
   static const String newPasswordScreen = "/NewPasswordScreen";
   static const String successScreen = "/SuccessScreen";
   static const String homeScreen = "/HomeScreen";
+  static const String exercisesScreen = "/ExercisesScreen";
+  static const String vedioScreen = "/VedioScreen";
 
   static List<GetPage> routes = [
     GetPage(name: splashScreen, page: () => SplashScreen(),transition: Transition.fadeIn),
@@ -26,5 +30,7 @@ class Routes {
     GetPage(name: newPasswordScreen, page: () => NewPasswordScreen(),transition: Transition.fadeIn),
     GetPage(name: successScreen, page: () => SuccessScreen(),transition: Transition.fadeIn),
     GetPage(name: homeScreen, page: () => HomeScreen(),transition: Transition.fadeIn),
+    GetPage(name: exercisesScreen, page: () => ExercisesScreen(),transition: Transition.fadeIn),
+    GetPage(name: vedioScreen, page: () => VedioScreen(),transition: Transition.fadeIn),
   ];
 }

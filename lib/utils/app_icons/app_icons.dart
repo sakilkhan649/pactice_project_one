@@ -29,5 +29,13 @@ class AppIcons {
   static const String gellary_icon="$iconurl/gellary_icon.svg";
   static const String video_play_icon="$iconurl/video_play_icon.svg";
   static const String cloudArrowUp="$iconurl/cloudArrowUp.svg";
+  static const String exclametoryicon="$iconurl/exclametoryicon.svg";
+  static const String capetwoion="$iconurl/capetwoion.svg";
+  static const String hemaricon="$iconurl/hemaricon.svg";
+  static const String agunicon="$iconurl/agunicon.svg";
+  static const String exercisesicon="$iconurl/exercisesicon.svg";
+  static const String trainingplanicon="$iconurl/trainingplanicon.svg";
+  static const String historieicon="$iconurl/historieicon.svg";
+  static const String trainingspliticon="$iconurl/trainingspliticon.svg";
 
 }

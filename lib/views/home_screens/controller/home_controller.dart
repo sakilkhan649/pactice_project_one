@@ -4,7 +4,7 @@ import '../task_screens/task_screen.dart';
 import '../daily_screen/daily_screen.dart';
 import '../meatls_screen.dart';
 import '../profile_daily_screen.dart';
-import '../training_screen.dart';
+import '../training_screen/training_screen.dart';
 
 
 

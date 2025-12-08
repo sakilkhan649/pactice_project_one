@@ -3,9 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:newproject/utils/app_colors/app_colors.dart';
 import 'package:newproject/widgets/Custom_Text.dart';
-
-import '../../../utils/app_icons/app_icons.dart';
-import '../../../widgets/Custom_Button.dart';
+import '../../../../utils/app_icons/app_icons.dart';
+import '../../../../widgets/Custom_Button.dart';
 
 class PhotosScreen extends StatelessWidget {
   const PhotosScreen({super.key});

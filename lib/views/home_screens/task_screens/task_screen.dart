@@ -4,10 +4,10 @@ import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:newproject/utils/app_icons/app_icons.dart';
-import 'package:newproject/views/home_screens/task_screens/checking_screen.dart';
-import 'package:newproject/views/home_screens/task_screens/photos_screen.dart';
-import 'package:newproject/views/home_screens/task_screens/profile_task_screen.dart';
-import 'package:newproject/views/home_screens/task_screens/questions_screen.dart';
+import 'package:newproject/views/home_screens/task_screens/checking_screen/checking_screen.dart';
+import 'package:newproject/views/home_screens/task_screens/photos_screen/photos_screen.dart';
+import 'package:newproject/views/home_screens/task_screens/profile_task_screen/profile_task_screen.dart';
+import 'package:newproject/views/home_screens/task_screens/questions_screen/questions_screen.dart';
 import '../../../widgets/Custom_AppBar.dart';
 import '../../../widgets/Custom_back_button.dart';
 

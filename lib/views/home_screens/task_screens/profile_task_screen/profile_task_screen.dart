@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:newproject/widgets/CustomBox_Container.dart';
-import '../../../utils/app_colors/app_colors.dart';
-import '../../../utils/app_icons/app_icons.dart';
-import '../../../widgets/Custom_Button.dart';
-import '../../../widgets/Custom_Text.dart';
+import '../../../../utils/app_colors/app_colors.dart';
+import '../../../../utils/app_icons/app_icons.dart';
+import '../../../../widgets/Custom_Button.dart';
+import '../../../../widgets/Custom_Text.dart';
 
 class ProfileTaskScreen extends StatelessWidget {
   const ProfileTaskScreen({super.key});
