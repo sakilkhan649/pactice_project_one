@@ -11,6 +11,7 @@ class CustomBox extends StatelessWidget {
   final double borderRadius;
   final Color borderColor;
   final double borderWidth;
+  final VoidCallback? onTap;
 
   const CustomBox({
     super.key,
@@ -22,23 +23,27 @@ class CustomBox extends StatelessWidget {
     this.borderRadius = 8,
     this.borderColor = Colors.white12,
     this.borderWidth = 1,
+    this.onTap
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: height ?? 74.h,
-      width: width ?? double.maxFinite,
-       padding: padding ?? EdgeInsets.fromLTRB(13, 7, 16, 7),
-      decoration: BoxDecoration(
-        color: color,
-        borderRadius: BorderRadius.circular(borderRadius.r),
-        border: Border.all(
-          color: borderColor,
-          width: borderWidth.w,
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        height: height ?? 74.h,
+        width: width ?? double.maxFinite,
+         padding: padding ?? EdgeInsets.fromLTRB(13, 7, 16, 7),
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.circular(borderRadius.r),
+          border: Border.all(
+            color: borderColor,
+            width: borderWidth.w,
+          ),
         ),
+        child: child,
       ),
-      child: child,
     );
   }
 }

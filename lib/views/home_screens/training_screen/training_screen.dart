@@ -20,7 +20,7 @@ class TrainingScreen extends StatelessWidget {
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsetsGeometry.fromLTRB(25.w, 57.w, 25.w, 209.w),
+          padding: EdgeInsetsGeometry.fromLTRB(25.w, 60.w, 25.w, 209.w),
           child: Column(
             children: [
               ///=========================Row horizental=========================
@@ -156,6 +156,9 @@ class TrainingScreen extends StatelessWidget {
                   SizedBox(width: 20.w),
                   Expanded(
                     child: CustomContainer(
+                      onTap: () {
+                        Get.toNamed(Routes.trainingPlanScreen);
+                      },
                       height: 155.h,
                       width: 165.w,
                       borderColor: AppColors.blue700,
@@ -194,6 +197,9 @@ class TrainingScreen extends StatelessWidget {
                 children: [
                   Expanded(
                     child: CustomContainer(
+                      onTap: () {
+                        Get.toNamed(Routes.historieScreen);
+                      },
                       height: 155.h,
                       width: 165.w,
                       borderColor: AppColors.orenge300,
@@ -228,6 +234,9 @@ class TrainingScreen extends StatelessWidget {
                   ///=======================Row vertical Three ======================
                   Expanded(
                     child: CustomContainer(
+                      onTap: () {
+                        Get.toNamed(Routes.trainingSplitScreen);
+                      },
                       height: 155.h,
                       width: 165.w,
                       borderColor: AppColors.orenge400,

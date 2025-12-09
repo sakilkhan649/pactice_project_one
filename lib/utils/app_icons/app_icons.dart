@@ -37,5 +37,7 @@ class AppIcons {
   static const String trainingplanicon="$iconurl/trainingplanicon.svg";
   static const String historieicon="$iconurl/historieicon.svg";
   static const String trainingspliticon="$iconurl/trainingspliticon.svg";
+  static const String ri_time_icon="$iconurl/ri_time_icon.svg";
+  static const String tickIicon="$iconurl/tickIicon.svg";
 
 }
