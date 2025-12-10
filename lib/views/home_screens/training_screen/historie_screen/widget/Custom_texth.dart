@@ -32,7 +32,7 @@ class CustomTexth extends StatelessWidget {
           TextStyle(
             color: color ?? Colors.white,
             fontSize: fontSize ?? 14,
-            fontWeight: fontWeight ?? FontWeight.normal,
+            fontWeight: fontWeight ?? FontWeight.w400,
           ),
     );
   }

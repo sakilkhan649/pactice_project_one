@@ -7,11 +7,16 @@ class AppColors{
   static const blue500=Color(0xFF0A0A1F);
   static const blue700=Color(0xFF09579A);
   static const blue800=Color(0xFF1B3043);
+  static const blue900=Color(0xFF13132B);
+  static const blue1000=Color(0xFF1B3043);
+  static const blue1100=Color(0xFF2287DD);
   static const gray100=Color(0xFF8E8E8E);
   static const gray200=Color(0xFFB7B1B1);
   static const gray300=Color(0xFFCFB8B8);
   static const gray400=Color(0xFF8F8F8F);
   static const gray500=Color(0xFFA1A1A1);
+  static const gray600=Color(0xFF838383);
+  static const gray700=Color(0xFF182418);
   static const tiya100=Color(0xFF4C9A4E);
   static const tiya200=Color(0xFF2F422F);
   static const black100=Color(0xFF060615);
@@ -24,5 +29,9 @@ class AppColors{
   static const orenge300=Color(0xFF773D12);
   static const green100=Color(0xFF294328);
   static const green200=Color(0xFF43A047);
+  static const green300=Color(0xFF3C7D3D);
+  static const green400=Color(0xFF274128);
   static const orenge400=Color(0xFFFC9502);
+  static const orenge500=Color(0xFFFF6D00);
+  static const orenge600=Color(0xFFE9E455);
 }

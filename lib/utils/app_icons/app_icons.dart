@@ -39,5 +39,14 @@ class AppIcons {
   static const String trainingspliticon="$iconurl/trainingspliticon.svg";
   static const String ri_time_icon="$iconurl/ri_time_icon.svg";
   static const String tickIicon="$iconurl/tickIicon.svg";
+  static const String footicon="$iconurl/footicon.svg";
+  static const String track_icon="$iconurl/track_icon.svg";
+  static const String statistics_icon="$iconurl/statistics_icon.svg";
+  static const String supplements_icon="$iconurl/supplements_icon.svg";
+  static const String peds_icon="$iconurl/peds_icon.svg";
+  static const String edit_icon="$iconurl/edit_icon.svg";
+  static const String dope_two_icon="$iconurl/dope_two_icon.svg";
+  static const String dope_three_icon="$iconurl/dope_three_icon.svg";
+  static const String pluse_icon="$iconurl/pluse_icon.svg";
 
 }

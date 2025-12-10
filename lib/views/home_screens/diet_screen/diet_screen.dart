@@ -2,133 +2,102 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:newproject/core/routs/routs.dart';
 import 'package:newproject/utils/app_colors/app_colors.dart';
-import 'package:newproject/views/home_screens/training_screen/widgets/Custom_container.dart';
-import 'package:newproject/widgets/Custom_Text.dart';
+
+import '../../../core/routs/routs.dart';
 import '../../../utils/app_icons/app_icons.dart';
 import '../../../widgets/Custom_AppBar.dart';
+import '../../../widgets/Custom_Text.dart';
 import '../../../widgets/Custom_back_button.dart';
+import '../training_screen/widgets/Custom_container.dart';
+import 'widget/custom_progress.dart';
 
-class TrainingScreen extends StatelessWidget {
-  const TrainingScreen({super.key});
+class DietScreen extends StatelessWidget {
+  const DietScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: "Training", leading: CustomBackButton()),
+      appBar: CustomAppBar(title: "Nutrition", leading: CustomBackButton()),
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.fromLTRB(25.w, 60.w, 25.w, 209.w),
+          padding: EdgeInsets.fromLTRB(22.w, 20.w, 22.w, 80.w),
           child: Column(
             children: [
-              ///=========================Row horizental=========================
-              Row(
-                children: [
-                  Expanded(
-                    child: CustomContainer(
-                      borderColor: AppColors.orenge200,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          SvgPicture.asset(
-                            AppIcons.capetwoion,
-                            height: 20.h,
-                            width: 20.w,
-                          ),
-                          SizedBox(height: 10.h),
-                          CustomText(
-                            text: "12",
+              Container(
+                width: double.infinity,
+                padding: EdgeInsets.all(16.w),
+                decoration: BoxDecoration(
+                  color: AppColors.blue400,
+                  border: Border.all(color: AppColors.gray600, width: 1),
+                  borderRadius: BorderRadius.circular(16.r),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // Header Row
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Today’s Macros",
+                          style: TextStyle(
                             color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
+                            fontSize: 16.sp,
+                            fontWeight: FontWeight.w600,
                           ),
-                          SizedBox(height: 10.h),
-                          CustomText(
-                            text: "PR’s this week",
-                            color: Colors.white,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
+                        ),
+                        Text(
+                          "1850/ 2500 kcal",
+                          style: TextStyle(
+                            color: AppColors.tiya100,
+                            fontSize: 14.sp,
+                            fontWeight: FontWeight.w600,
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  ),
-                  SizedBox(width: 20.w),
-                  Expanded(
-                    child: CustomContainer(
-                      borderColor: AppColors.blue700,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          SvgPicture.asset(
-                            AppIcons.hemaricon,
-                            height: 20.h,
-                            width: 20.w,
-                          ),
-                          SizedBox(height: 10.h),
-                          CustomText(
-                            text: "4850 kg",
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                          ),
-                          SizedBox(height: 10.h),
-                          CustomText(
-                            text: "Weekly Volume",
-                            color: Colors.white,
-                            fontSize: 10,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ],
-                      ),
+
+                    SizedBox(height: 20.h),
+
+                    CustomProgress(
+                      title: "Protein",
+                      value: "145kg/ 180g",
+                      progress: 145 / 180,
+                      color: Colors.blueAccent,
                     ),
-                  ),
-                  SizedBox(width: 20.w),
-                  Expanded(
-                    child: CustomContainer(
-                      borderColor: AppColors.orenge300,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          SvgPicture.asset(
-                            AppIcons.agunicon,
-                            height: 20.h,
-                            width: 20.w,
-                          ),
-                          SizedBox(height: 10.h),
-                          CustomText(
-                            text: "5",
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                          ),
-                          SizedBox(height: 10.h),
-                          CustomText(
-                            text: "Trainings",
-                            color: Colors.white,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ],
-                      ),
+
+                    SizedBox(height: 16.h),
+
+                    CustomProgress(
+                      title: "Carbs",
+                      value: "200g/ 240g",
+                      progress: 200 / 240,
+                      color: AppColors.green200,
                     ),
-                  ),
-                ],
+
+                    SizedBox(height: 16.h),
+
+                    CustomProgress(
+                      title: "Fett",
+                      value: "14kg/ 180g",
+                      progress: 100 / 180,
+                      color: AppColors.orenge500,
+                    ),
+                  ],
+                ),
               ),
-              SizedBox(height: 22.h),
+              SizedBox(height: 26.h),
 
               ///=======================Row vertical One ======================
+              ///=======================Food Items======================
               Row(
                 children: [
                   Expanded(
                     child: CustomContainer(
                       onTap: () {
-                        Get.toNamed(Routes.exercisesScreen);
+                        Get.toNamed(Routes.foodItemsScreen);
                       },
                       height: 155.h,
                       width: 165.w,
@@ -139,13 +108,13 @@ class TrainingScreen extends StatelessWidget {
                         children: [
                           SizedBox(height: 18.h),
                           SvgPicture.asset(
-                            AppIcons.exercisesicon,
+                            AppIcons.footicon,
                             height: 45.h,
                             width: 45.w,
                           ),
                           SizedBox(height: 18.h),
                           CustomText(
-                            text: "EXERCISES",
+                            text: "Food Items",
                             color: Colors.white,
                             fontSize: 18,
                             fontWeight: FontWeight.w500,
@@ -162,10 +131,11 @@ class TrainingScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(width: 20.w),
+                  ///====================NutritionPlanScreen=================
                   Expanded(
                     child: CustomContainer(
                       onTap: () {
-                        Get.toNamed(Routes.trainingPlanScreen);
+                        Get.toNamed(Routes.nutritionPlanScreen);
                       },
                       height: 155.h,
                       width: 165.w,
@@ -182,14 +152,14 @@ class TrainingScreen extends StatelessWidget {
                           ),
                           SizedBox(height: 18.h),
                           CustomText(
-                            text: "TRAINING PLAN",
+                            text: "NUTRITION PLAN",
                             color: Colors.white,
-                            fontSize: 18,
+                            fontSize: 16,
                             fontWeight: FontWeight.w500,
                           ),
                           SizedBox(height: 6.h),
                           CustomText(
-                            text: "Weekly Overview",
+                            text: "Wekiy Overview",
                             color: AppColors.gray300,
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
@@ -201,14 +171,14 @@ class TrainingScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 15.h),
-
               ///=======================Row vertical Two ======================
+              ///=======================TRACK MEALS======================
               Row(
                 children: [
                   Expanded(
                     child: CustomContainer(
                       onTap: () {
-                        Get.toNamed(Routes.historieScreen);
+                         Get.toNamed(Routes.trackMealsScreen);
                       },
                       height: 155.h,
                       width: 165.w,
@@ -219,20 +189,20 @@ class TrainingScreen extends StatelessWidget {
                         children: [
                           SizedBox(height: 18.h),
                           SvgPicture.asset(
-                            AppIcons.historieicon,
+                            AppIcons.track_icon,
                             height: 45.h,
                             width: 45.w,
                           ),
                           SizedBox(height: 18.h),
                           CustomText(
-                            text: "HISTORIE",
+                            text: "TRACK MEALS",
                             color: Colors.white,
                             fontSize: 18,
                             fontWeight: FontWeight.w500,
                           ),
                           SizedBox(height: 6.h),
                           CustomText(
-                            text: "Past Workouts",
+                            text: "To Record",
                             color: AppColors.gray300,
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
@@ -242,12 +212,10 @@ class TrainingScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(width: 20.w),
-
-                  ///=======================Row vertical Three ======================
                   Expanded(
                     child: CustomContainer(
                       onTap: () {
-                        Get.toNamed(Routes.trainingSplitScreen);
+                        // Get.toNamed(Routes.trainingSplitScreen);
                       },
                       height: 155.h,
                       width: 165.w,
@@ -258,20 +226,94 @@ class TrainingScreen extends StatelessWidget {
                         children: [
                           SizedBox(height: 18.h),
                           SvgPicture.asset(
-                            AppIcons.trainingspliticon,
+                            AppIcons.statistics_icon,
                             height: 45.h,
                             width: 45.w,
                           ),
                           SizedBox(height: 18.h),
                           CustomText(
-                            text: "TRAINING SPLIT",
+                            text: "STATISTICS",
                             color: Colors.white,
                             fontSize: 18,
                             fontWeight: FontWeight.w500,
                           ),
                           SizedBox(height: 6.h),
                           CustomText(
-                            text: "View Training Split",
+                            text: "View History",
+                            color: AppColors.gray300,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+
+              SizedBox(height: 15.h),
+
+              ///=======================Row vertical Three ======================
+              Row(
+                children: [
+                  Expanded(
+                    child: CustomContainer(
+                      onTap: () {
+                        // Get.toNamed(Routes.historieScreen);
+                      },
+                      height: 155.h,
+                      width: 165.w,
+                      borderColor: AppColors.orenge300,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          SizedBox(height: 18.h),
+                          SvgPicture.asset(
+                            AppIcons.supplements_icon,
+                            height: 45.h,
+                            width: 45.w,
+                          ),
+                          SizedBox(height: 18.h),
+                          CustomText(
+                            text: "SUPPLEMENTS Plan",
+                            color: Colors.white,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 20.w),
+                  Expanded(
+                    child: CustomContainer(
+                      onTap: () {
+                        // Get.toNamed(Routes.trainingSplitScreen);
+                      },
+                      height: 155.h,
+                      width: 165.w,
+                      borderColor: AppColors.orenge400,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          SizedBox(height: 18.h),
+                          SvgPicture.asset(
+                            AppIcons.peds_icon,
+                            height: 45.h,
+                            width: 45.w,
+                          ),
+                          SizedBox(height: 18.h),
+                          CustomText(
+                            text: "PEDs",
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                          ),
+                          SizedBox(height: 6.h),
+                          CustomText(
+                            text: "Plan",
                             color: AppColors.gray300,
                             fontSize: 16,
                             fontWeight: FontWeight.w400,

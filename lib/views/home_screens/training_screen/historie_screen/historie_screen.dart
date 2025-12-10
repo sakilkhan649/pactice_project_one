@@ -22,7 +22,7 @@ class HistorieScreen extends StatelessWidget {
       ),
       backgroundColor: Colors.black,
       body: Padding(
-        padding: EdgeInsetsGeometry.fromLTRB(22.w, 30.w, 23.w, 209.w),
+        padding: EdgeInsets.fromLTRB(22.w, 30.w, 23.w, 209.w),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,

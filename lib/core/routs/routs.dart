@@ -6,6 +6,9 @@ import 'package:newproject/views/auth_screen/otp_screen.dart';
 import 'package:newproject/views/auth_screen/splash_screen.dart';
 import 'package:newproject/views/auth_screen/success_screen.dart';
 import 'package:newproject/views/home_screens/daily_screen/daily_screen.dart';
+import 'package:newproject/views/home_screens/diet_screen/food_Items_screen/food_Items_screen.dart';
+import 'package:newproject/views/home_screens/diet_screen/nutrition_Plan_screen/nutrition_Plan_screen.dart';
+import 'package:newproject/views/home_screens/diet_screen/track_meals_screen/track_meals_screen.dart';
 import 'package:newproject/views/home_screens/training_screen/exercises_screens/exercises_screen.dart';
 import 'package:newproject/views/home_screens/training_screen/exercises_screens/vedio_screen/vedio_screen.dart';
 import 'package:newproject/views/home_screens/training_screen/historie_screen/historie_screen.dart';
@@ -33,6 +36,9 @@ class Routes {
   static const String trainingPlanTreamScreen = "/TrainingPlanTreamScreen";
   static const String pushDayScreen = "/PushDayScreen";
   static const String pullFullbodyScreen = "/PullFullbodyScreen";
+  static const String nutritionPlanScreen = "/NutritionPlanScreen";
+  static const String foodItemsScreen = "/FoodItemsScreen";
+  static const String trackMealsScreen = "/TrackMealsScreen";
 
   static List<GetPage> routes = [
     GetPage(name: splashScreen, page: () => SplashScreen(),transition: Transition.fadeIn),
@@ -50,5 +56,8 @@ class Routes {
     GetPage(name: pushDayScreen, page: () => PushDayScreen(),transition: Transition.fadeIn),
     GetPage(name: pullFullbodyScreen, page: () => PullFullbodyScreen(),transition: Transition.fadeIn),
     GetPage(name: trainingPlanTreamScreen, page: () => TrainingPlanTreamScreen(),transition: Transition.fadeIn),
+    GetPage(name: nutritionPlanScreen, page: () => NutritionPlanScreen(),transition: Transition.fadeIn),
+    GetPage(name: foodItemsScreen, page: () => FoodItemsScreen(),transition: Transition.fadeIn),
+    GetPage(name: trackMealsScreen, page: () => TrackMealsScreen(),transition: Transition.fadeIn),
   ];
 }

@@ -16,7 +16,7 @@ class PullFullbodyScreen extends StatelessWidget {
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsetsGeometry.fromLTRB(25.w, 40.w, 25.w, 209.w),
+          padding: EdgeInsets.fromLTRB(25.w, 40.w, 25.w, 209.w),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,

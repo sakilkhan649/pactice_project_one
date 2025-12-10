@@ -29,7 +29,7 @@ class PushDayScreen extends StatelessWidget {
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsetsGeometry.fromLTRB(24.w, 10.w, 24.w, 60.w),
+          padding: EdgeInsets.fromLTRB(24.w, 10.w, 24.w, 60.w),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,

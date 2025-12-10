@@ -19,7 +19,7 @@ class TrainingPlanTreamScreen extends StatelessWidget {
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsetsGeometry.fromLTRB(22.w, 37.w, 22.w, 60.w),
+          padding: EdgeInsets.fromLTRB(22.w, 37.w, 22.w, 60.w),
           child: Column(
             children: [
               CustomBox(
