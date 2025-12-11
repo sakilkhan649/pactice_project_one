@@ -55,7 +55,7 @@ class DailyScreen extends StatelessWidget {
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsetsGeometry.fromLTRB(17.w, 43.w, 31.w, 9.w),
+          padding: EdgeInsets.fromLTRB(17.w, 43.w, 31.w, 9.w),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -534,7 +534,7 @@ class DailyScreen extends StatelessWidget {
 
               ///=========================Nutrition===================
               CustomBox(
-                height: 385.h,
+                height: 400.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,

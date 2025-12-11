@@ -23,6 +23,7 @@ class AppColors{
   static const black300=Color(0xFF30303D);
   static const black200=Color(0xFF1A1A1A);
   static const tiya300=Color(0xFF416B42);
+  static const tiya400=Color(0xFF43A047);
   static const blue600=Color(0xFF26263B);
   static const orenge100=Color(0xFFC7A1A1);
   static const orenge200=Color(0xFF936E19);
@@ -34,4 +35,5 @@ class AppColors{
   static const orenge400=Color(0xFFFC9502);
   static const orenge500=Color(0xFFFF6D00);
   static const orenge600=Color(0xFFE9E455);
+  static const orenge700=Color(0xFF361E1C);
 }

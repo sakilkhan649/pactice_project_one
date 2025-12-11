@@ -48,5 +48,10 @@ class AppIcons {
   static const String dope_two_icon="$iconurl/dope_two_icon.svg";
   static const String dope_three_icon="$iconurl/dope_three_icon.svg";
   static const String pluse_icon="$iconurl/pluse_icon.svg";
+  static const String profile_icon="$iconurl/profile_icon.svg";
+  static const String personal_profile_icon="$iconurl/personal_profile_icon.svg";
+  static const String dopdown_icon_down_one="$iconurl/dopdown_icon_down_one.svg";
+  static const String dopdown_icon_down_two="$iconurl/dopdown_icon_down_two.svg";
+  static const String bag_icon="$iconurl/bag_icon.svg";
 
 }

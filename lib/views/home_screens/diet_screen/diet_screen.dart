@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:newproject/utils/app_colors/app_colors.dart';
-
 import '../../../core/routs/routs.dart';
 import '../../../utils/app_icons/app_icons.dart';
 import '../../../widgets/Custom_AppBar.dart';
@@ -131,6 +130,7 @@ class DietScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(width: 20.w),
+
                   ///====================NutritionPlanScreen=================
                   Expanded(
                     child: CustomContainer(
@@ -171,6 +171,7 @@ class DietScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 15.h),
+
               ///=======================Row vertical Two ======================
               ///=======================TRACK MEALS======================
               Row(
@@ -178,7 +179,7 @@ class DietScreen extends StatelessWidget {
                   Expanded(
                     child: CustomContainer(
                       onTap: () {
-                         Get.toNamed(Routes.trackMealsScreen);
+                        Get.toNamed(Routes.trackMealsScreen);
                       },
                       height: 155.h,
                       width: 165.w,
@@ -215,7 +216,7 @@ class DietScreen extends StatelessWidget {
                   Expanded(
                     child: CustomContainer(
                       onTap: () {
-                        // Get.toNamed(Routes.trainingSplitScreen);
+                        Get.toNamed(Routes.statisticsScreen);
                       },
                       height: 155.h,
                       width: 165.w,
@@ -259,7 +260,7 @@ class DietScreen extends StatelessWidget {
                   Expanded(
                     child: CustomContainer(
                       onTap: () {
-                        // Get.toNamed(Routes.historieScreen);
+                        Get.toNamed(Routes.supplementsScreen);
                       },
                       height: 155.h,
                       width: 165.w,
@@ -289,7 +290,7 @@ class DietScreen extends StatelessWidget {
                   Expanded(
                     child: CustomContainer(
                       onTap: () {
-                        // Get.toNamed(Routes.trainingSplitScreen);
+                        Get.toNamed(Routes.pedsScreen);
                       },
                       height: 155.h,
                       width: 165.w,

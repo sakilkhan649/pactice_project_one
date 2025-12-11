@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import '../task_screens/task_screen.dart';
 import '../daily_screen/daily_screen.dart';
 import '../diet_screen/diet_screen.dart';
-import '../profile_daily_screen.dart';
+import '../profile_screen/profile_daily_screen.dart';
 import '../training_screen/training_screen.dart';
 
 
