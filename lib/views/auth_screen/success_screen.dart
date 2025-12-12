@@ -40,7 +40,7 @@ class SuccessScreen extends StatelessWidget {
               CustomButton(
                 text: "Back to home",
                 onPressed: () {
-                  Get.toNamed(Routes.homeScreen);
+                  Get.offAllNamed(Routes.homeScreen);
                 },
               ),
             ],

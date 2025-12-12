@@ -1,205 +1,161 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:newproject/utils/app_colors/app_colors.dart';
-import 'package:newproject/views/home_screens/training_screen/widgets/Custom_container.dart';
-import 'package:newproject/widgets/CustomBox_Container.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../../utils/app_icons/app_icons.dart';
 import '../../../../widgets/Custom_AppBar.dart';
 import '../../../../widgets/Custom_back_button.dart';
+import '../../training_screen/historie_screen/widget/Custom_texth.dart';
 
 class SupplementsScreen extends StatelessWidget {
-  SupplementsScreen({super.key});
-  final List<Map<String, String>> supplements = [
-    {
-      'name': 'Multivitamin',
-      'dosage': '5g per day',
-      'time': 'morning',
-      'purpose': 'Text',
-    },
-    {
-      'name': 'Vitamin',
-      'dosage': '5g per day',
-      'time': 'morning',
-      'purpose': 'Text',
-    },
-    {
-      'name': 'Zink',
-      'dosage': '5g per day',
-      'time': 'morning',
-      'purpose': 'Text',
-    },
-  ];
+  const SupplementsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: " Supplement", leading: CustomBackButton()),
+      appBar: CustomAppBar(title: "Supplement", leading: CustomBackButton()),
       backgroundColor: Colors.black,
       body: Padding(
-        padding: EdgeInsets.fromLTRB(22.w, 20.w, 22.w, 80.w),
-        child: Column(
-          children: [
-            Container(
-              padding: EdgeInsets.fromLTRB(0.w, 20.w, 0.w, 60.w),
-              decoration: BoxDecoration(
-                color: Color(0xFF101021),
-                border: Border.all(color: Colors.white12),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Icon(Icons.water_drop, color: Colors.blue, size: 28),
-                      const SizedBox(width: 12),
-                      const Text(
-                        'Supplement',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 20.h),
-                  // Table Container
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xFF1A1D2E),
-                        borderRadius: BorderRadius.circular(12),
-                        border: Border.all(
-                          color: Colors.white.withOpacity(0.1),
-                          width: 1,
-                        ),
-                      ),
-                      child: Column(
-                        children: [
-                          // Table Header
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 16,
-                            ),
-                            decoration: BoxDecoration(
-                              color: const Color(0xFF232735),
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(12),
-                                topRight: Radius.circular(12),
-                              ),
-                              border: Border(
-                                bottom: BorderSide(
-                                  color: Colors.white.withOpacity(0.1),
-                                  width: 1,
-                                ),
-                              ),
-                            ),
-                            child: Row(
-                              children: [
-                                _buildHeaderCell('Name'),
-                                _buildHeaderCell('Dosage'),
-                                _buildHeaderCell('Time'),
-                                _buildHeaderCell('Purpose'),
-                              ],
-                            ),
-                          ),
-
-                          // Table Rows
-                          ...List.generate(supplements.length, (index) {
-                            final supplement = supplements[index];
-                            final isLast = index == supplements.length - 1;
-
-                            return Column(
-                              children: [
-                                _buildTableRow(
-                                  name: supplement['name']!,
-                                  dosage: supplement['dosage']!,
-                                  time: supplement['time']!,
-                                  purpose: supplement['purpose']!,
-                                ),
-
-                                if (!isLast)
-                                  Container(
-                                    height: 1,
-                                    color: Colors.white.withOpacity(0.1),
-                                  ),
-                              ],
-                            );
-                          }),
-                        ],
-                      ),
+        padding: EdgeInsets.fromLTRB(22.w, 20.w, 22.w, 10.w),
+        child: Container(
+          height: 340,
+          decoration: BoxDecoration(
+            color: const Color(0xFF101021),
+            border: Border.all(color: Colors.white12),
+            borderRadius: BorderRadius.circular(12.r),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              /// Header Row
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    SvgPicture.asset(
+                      AppIcons.dopicon,
+                      height: 24.h,
+                      width: 24.w,
                     ),
-                  ),
-                ],
+                    SizedBox(width: 10.w),
+                    const CustomTexth(
+                      text: "Supplement",
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ],
+                ),
               ),
-            ),
-            const SizedBox(height: 20),
-          ],
+
+              SizedBox(height: 16.h),
+
+              /// Table
+              Expanded(child: _buildTable(context)),
+            ],
+          ),
         ),
       ),
     );
   }
-}
 
-/// ------- Header Cell ---------
-Widget _buildHeaderCell(String text) {
-  return Container(
-    width: 120,
-    padding: const EdgeInsets.symmetric(horizontal: 8),
-    decoration: BoxDecoration(
-      border: Border(
-        right: BorderSide(color: Colors.white.withOpacity(0.1), width: 1),
+  /// TABLE BUILDER
+  Widget _buildTable(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Theme(
+        data: Theme.of(context).copyWith(
+          dividerColor: Colors.white12, // Divider color fixed
+        ),
+        child: DataTable(
+          decoration: BoxDecoration(border: Border.all(color: Colors.white12)),
+          headingRowColor: MaterialStateProperty.all(const Color(0xFF1E1E2F)),
+          dataRowColor: MaterialStateProperty.all(const Color(0xFF101021)),
+          border: TableBorder.all(color: Colors.white12),
+          columnSpacing: 30.w,
+          columns: _buildColumns(),
+          rows: _buildRows(),
+          dividerThickness: 0.3,
+        ),
       ),
-    ),
-    child: Text(
-      text,
-      style: const TextStyle(
-        color: Colors.white,
-        fontSize: 16,
-        fontWeight: FontWeight.w600,
-      ),
-    ),
-  );
-}
+    );
+  }
 
-/// ------- Table Row ---------
-Widget _buildTableRow({
-  required String name,
-  required String dosage,
-  required String time,
-  required String purpose,
-}) {
-  return Container(
-    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
-    child: Row(
-      children: [
-        _buildDataCell(name),
-        _buildDataCell(dosage),
-        _buildDataCell(time),
-        _buildDataCell(purpose),
-      ],
-    ),
-  );
-}
+  /// TABLE COLUMNS
+  List<DataColumn> _buildColumns() {
+    return const [
+      DataColumn(
+        label: Text("Name", style: TextStyle(color: Colors.white)),
+      ),
+      DataColumn(
+        label: Text("Dosage", style: TextStyle(color: Colors.white)),
+      ),
+      DataColumn(
+        label: Text("Time", style: TextStyle(color: Colors.white)),
+      ),
+      DataColumn(
+        label: Text("Purpose", style: TextStyle(color: Colors.white)),
+      ),
+      DataColumn(
+        label: Text("Brand", style: TextStyle(color: Colors.white)),
+      ),
+      DataColumn(
+        label: Text("Comment", style: TextStyle(color: Colors.white)),
+      ),
+    ];
+  }
 
-/// ------- Data Cell ---------
-Widget _buildDataCell(String text) {
-  return Container(
-    width: 120,
-    padding: const EdgeInsets.symmetric(horizontal: 8),
-    decoration: BoxDecoration(
-      border: Border(
-        right: BorderSide(color: Colors.white.withOpacity(0.1), width: 1),
-      ),
-    ),
-    child: Text(
-      text,
-      style: TextStyle(
-        color: Colors.white.withOpacity(0.8),
-        fontSize: 15,
-        fontWeight: FontWeight.w400,
-      ),
-    ),
-  );
+  /// TABLE ROWS
+  List<DataRow> _buildRows() {
+    final supplements = [
+      {
+        "Name": "Multivitamin",
+        "Dosage": "5g per day",
+        "Time": "Morning",
+        "Purpose": "Energy & health",
+        "Brand": "ABC Health",
+        "Comment": "Take after breakfast",
+      },
+      {
+        "Name": "Vitamin C",
+        "Dosage": "1 Tablet",
+        "Time": "Evening",
+        "Purpose": "Boost immunity",
+        "Brand": "XYZ Pharma",
+        "Comment": "With warm water",
+      },
+      {
+        "Name": "Zinc",
+        "Dosage": "10mg",
+        "Time": "Night",
+        "Purpose": "Metabolism support",
+        "Brand": "NutraPro",
+        "Comment": "Before sleep",
+      },
+    ];
+
+    return supplements.map((item) {
+      return DataRow(
+        cells: [
+          DataCell(
+            Text(item["Name"]!, style: const TextStyle(color: Colors.white)),
+          ),
+          DataCell(
+            Text(item["Dosage"]!, style: const TextStyle(color: Colors.white)),
+          ),
+          DataCell(
+            Text(item["Time"]!, style: const TextStyle(color: Colors.white)),
+          ),
+          DataCell(
+            Text(item["Purpose"]!, style: const TextStyle(color: Colors.white)),
+          ),
+          DataCell(
+            Text(item["Brand"]!, style: const TextStyle(color: Colors.white)),
+          ),
+          DataCell(
+            Text(item["Comment"]!, style: const TextStyle(color: Colors.white)),
+          ),
+        ],
+      );
+    }).toList();
+  }
 }

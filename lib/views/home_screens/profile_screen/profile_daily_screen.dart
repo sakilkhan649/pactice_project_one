@@ -71,7 +71,7 @@ class ProfileDailyScreen extends StatelessWidget {
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.fromLTRB(17.w, 20.w, 31.w, 40.w),
+          padding: EdgeInsets.fromLTRB(17.w, 20.w, 17.w, 40.w),
           child: Column(
             children: [
               ///======================Profile=========================
@@ -115,7 +115,6 @@ class ProfileDailyScreen extends StatelessWidget {
 
               ///===========================Column==============
               CustomBox(
-                height: 167.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -190,7 +189,6 @@ class ProfileDailyScreen extends StatelessWidget {
 
               ///===========================Column==============
               CustomBox(
-                height: 350.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -362,7 +360,6 @@ class ProfileDailyScreen extends StatelessWidget {
 
               ///===========================Column==============
               CustomBox(
-                height: 200.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,

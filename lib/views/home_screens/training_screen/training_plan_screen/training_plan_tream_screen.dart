@@ -23,7 +23,6 @@ class TrainingPlanTreamScreen extends StatelessWidget {
           child: Column(
             children: [
               CustomBox(
-                height: 550.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,14 +31,14 @@ class TrainingPlanTreamScreen extends StatelessWidget {
                     CustomText(
                       text: "Arms",
                       color: Colors.white,
-                      fontSize: 22,
+                      fontSize: 22.sp,
                       fontWeight: FontWeight.w500,
                     ),
                     SizedBox(height: 20.h),
                     CustomText(
                       text: " Last performed 12 days ago",
                       color: Colors.white,
-                      fontSize: 18,
+                      fontSize: 18.sp,
                       fontWeight: FontWeight.w500,
                     ),
                     SizedBox(height: 25.h),
@@ -48,7 +47,7 @@ class TrainingPlanTreamScreen extends StatelessWidget {
                     Row(
                       children: [
                         CircleAvatar(
-                          radius: 20,
+                          radius: 20.r,
                           backgroundColor: AppColors.gray300,
                         ),
                         SizedBox(width: 5.w),
@@ -59,14 +58,14 @@ class TrainingPlanTreamScreen extends StatelessWidget {
                             CustomText(
                               text: "2 X Lateral Raise (Machine) ",
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.w400,
                             ),
                             SizedBox(height: 11.h),
                             CustomText(
                               text: "Shoulders ",
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.w400,
                             ),
                           ],
@@ -79,7 +78,7 @@ class TrainingPlanTreamScreen extends StatelessWidget {
                     Row(
                       children: [
                         CircleAvatar(
-                          radius: 20,
+                          radius: 20.r,
                           backgroundColor: AppColors.gray300,
                         ),
                         SizedBox(width: 5.w),
@@ -90,14 +89,14 @@ class TrainingPlanTreamScreen extends StatelessWidget {
                             CustomText(
                               text: "3 x  Bicep Curl (Cable)",
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.w400,
                             ),
                             SizedBox(height: 11.h),
                             CustomText(
                               text: "Arms",
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.w400,
                             ),
                           ],
@@ -110,7 +109,7 @@ class TrainingPlanTreamScreen extends StatelessWidget {
                     Row(
                       children: [
                         CircleAvatar(
-                          radius: 20,
+                          radius: 20.r,
                           backgroundColor: AppColors.gray300,
                         ),
                         SizedBox(width: 5.w),
@@ -121,14 +120,14 @@ class TrainingPlanTreamScreen extends StatelessWidget {
                             CustomText(
                               text: "2 x Triceps Extension ( Mechine) ",
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.w400,
                             ),
                             SizedBox(height: 11.h),
                             CustomText(
                               text: "Arms",
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.w400,
                             ),
                           ],
@@ -141,13 +140,13 @@ class TrainingPlanTreamScreen extends StatelessWidget {
                     Row(
                       children: [
                         CircleAvatar(
-                          radius: 20,
+                          radius: 20.r,
                           backgroundColor: AppColors.gray300,
                           child: CustomText(
                             text: "Y",
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
-                            fontSize: 22,
+                            fontSize: 22.sp,
                           ),
                         ),
                         SizedBox(width: 5.w),
@@ -158,14 +157,14 @@ class TrainingPlanTreamScreen extends StatelessWidget {
                             CustomText(
                               text: "2 x Y-Raisel",
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.w400,
                             ),
                             SizedBox(height: 11.h),
                             CustomText(
                               text: "Shoulders",
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.w400,
                             ),
                           ],
@@ -184,7 +183,7 @@ class TrainingPlanTreamScreen extends StatelessWidget {
                             text: "U",
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
-                            fontSize: 22,
+                            fontSize: 22.sp,
                           ),
                         ),
                         SizedBox(width: 5.w),
@@ -195,14 +194,14 @@ class TrainingPlanTreamScreen extends StatelessWidget {
                             CustomText(
                               text: "2 x Smith Machine Shoulders ",
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.w400,
                             ),
                             SizedBox(height: 11.h),
                             CustomText(
                               text: "Press Shoulders",
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.w400,
                             ),
                           ],

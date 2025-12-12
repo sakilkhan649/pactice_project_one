@@ -36,7 +36,6 @@ class Checkingscreen extends StatelessWidget {
             children: [
               ///==============Weight Class========================
               CustomBox(
-                height: 82.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -104,7 +103,6 @@ class Checkingscreen extends StatelessWidget {
 
               ///==============Average Weight in %========================
               CustomBox(
-                height: 82.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -174,7 +172,6 @@ class Checkingscreen extends StatelessWidget {
 
               ///==============Pictures uploaded========================
               CustomBox(
-                height: 427.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -286,7 +283,6 @@ class Checkingscreen extends StatelessWidget {
 
               ///==============Well-Being ========================
               CustomBox(
-                height: 340.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -333,7 +329,6 @@ class Checkingscreen extends StatelessWidget {
 
               ///==============Nutrition ========================
               CustomBox(
-                height: 292.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -379,7 +374,6 @@ class Checkingscreen extends StatelessWidget {
 
               ///==============Training ========================
               CustomBox(
-                height: 443.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -490,7 +484,6 @@ class Checkingscreen extends StatelessWidget {
 
               ///==============Dailt Notes========================
               CustomBox(
-                height: 100.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,

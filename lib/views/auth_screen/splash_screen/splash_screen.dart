@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:newproject/utils/app_images/app_images.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../controllers/splash_controller.dart';
+import 'controller/splash_controller.dart';
 
 
 class SplashScreen extends StatelessWidget {

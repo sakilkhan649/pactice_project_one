@@ -29,7 +29,7 @@ class LoginScreen extends StatelessWidget {
       key: _formkey,
       child: Scaffold(
         backgroundColor: Colors.black,
-        appBar: CustomAppBar(title: "Log In", leading: CustomBackButton()),
+        appBar: CustomAppBar(title: "Log In", automaticallyImplyLeading: false,),
         body: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.fromLTRB(25.w, 0.w, 25.w, 30.w),
@@ -56,11 +56,7 @@ class LoginScreen extends StatelessWidget {
                 Customtextfield(
                   prefixIcon: Padding(
                     padding: const EdgeInsets.all(10),
-                    child: SvgPicture.asset(
-                      AppIcons.emailicon,
-                      height: 4.h,
-                      width: 4.w,
-                    ),
+                    child: Icon(Icons.email_outlined, color: Colors.grey),
                   ),
                   controller: emailController,
                   hintText: "enter your email",
@@ -83,11 +79,7 @@ class LoginScreen extends StatelessWidget {
                   () => Customtextfield(
                     prefixIcon: Padding(
                       padding: const EdgeInsets.all(10),
-                      child: SvgPicture.asset(
-                        AppIcons.passwordicon,
-                        height: 4.h,
-                        width: 4.w,
-                      ),
+                      child: Icon(Icons.lock, color: Colors.grey),
                     ),
                     suffixIcon: IconButton(
                       icon: Icon(

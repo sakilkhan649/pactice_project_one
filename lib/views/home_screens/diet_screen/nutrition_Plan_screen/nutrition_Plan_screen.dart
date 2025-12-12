@@ -38,7 +38,6 @@ class NutritionPlanScreen extends StatelessWidget {
           child: Column(
             children: [
               CustomContainer(
-                height: 204.h,
                 borderColor: AppColors.green300,
                 backgroundColor: AppColors.green400,
                 horizontalPadding: 40.w,
@@ -75,7 +74,6 @@ class NutritionPlanScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 27.h),
                     CustomContainer(
-                      height: 86.h,
                       borderColor: AppColors.gray700,
                       backgroundColor: AppColors.gray700,
                       child: Column(
@@ -116,7 +114,6 @@ class NutritionPlanScreen extends StatelessWidget {
               SizedBox(height: 24.h),
 
               CustomBox(
-                height: 129.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,

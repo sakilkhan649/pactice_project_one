@@ -31,9 +31,9 @@ class CustomBox extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        height: height ?? 74.h,
+        height: height,
         width: width ?? double.maxFinite,
-         padding: padding ?? EdgeInsets.fromLTRB(13, 7, 16, 7),
+         padding: padding ?? EdgeInsets.fromLTRB(10.w, 10.w, 10.w, 10.w),
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(borderRadius.r),

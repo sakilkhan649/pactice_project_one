@@ -36,7 +36,6 @@ class ProfileTaskScreen extends StatelessWidget {
             ),
             SizedBox(height: 14.h),
             CustomBox(
-              height: 74.h,
               child: Row(
                 children: [
                   SvgPicture.asset(AppIcons.capicon, height: 16.h, width: 16.w),
@@ -45,14 +44,14 @@ class ProfileTaskScreen extends StatelessWidget {
                     text: "competition class",
                     color: Colors.grey,
                     fontWeight: FontWeight.w400,
-                    fontSize: 18,
+                    fontSize: 16,
                   ),
                   SizedBox(width: 9.w),
                   CustomText(
                     text: "Classic Physique",
                     color: Colors.white,
                     fontWeight: FontWeight.w400,
-                    fontSize: 18,
+                    fontSize: 16,
                   ),
                 ],
               ),
@@ -62,7 +61,6 @@ class ProfileTaskScreen extends StatelessWidget {
 
             ///==============Current Weight (kg)========================
             CustomBox(
-              height: 82.h,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -114,7 +112,6 @@ class ProfileTaskScreen extends StatelessWidget {
 
             ///==============Average Weight in %========================
             CustomBox(
-              height: 82.h,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,

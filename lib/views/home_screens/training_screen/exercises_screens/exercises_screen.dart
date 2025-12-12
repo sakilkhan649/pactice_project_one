@@ -127,7 +127,6 @@ class ExercisesScreen extends StatelessWidget {
 
   Widget _buildExerciseCard(ExerciseModel exercise) {
     return CustomBox(
-      height: 127.h,
       child: Row(
         children: [
           // Icon Container

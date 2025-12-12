@@ -16,7 +16,7 @@ class CustomBackButton extends StatelessWidget {
         child: Row(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 4),
+              padding: const EdgeInsets.only(left: 2),
               child: SvgPicture.asset(AppIcons.back_icon, height: 35.h, width: 35.w),
             ),
           ],

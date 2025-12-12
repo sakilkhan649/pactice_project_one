@@ -98,8 +98,6 @@ class DietScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.foodItemsScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.green100,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -137,8 +135,6 @@ class DietScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.nutritionPlanScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.blue700,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -181,8 +177,6 @@ class DietScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.trackMealsScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.orenge300,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -218,8 +212,6 @@ class DietScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.statisticsScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.orenge400,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -262,20 +254,18 @@ class DietScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.supplementsScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.orenge300,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          SizedBox(height: 18.h),
+                          SizedBox(height: 30.h),
                           SvgPicture.asset(
                             AppIcons.supplements_icon,
                             height: 45.h,
                             width: 45.w,
                           ),
-                          SizedBox(height: 18.h),
+                          SizedBox(height: 40.h),
                           CustomText(
                             text: "SUPPLEMENTS Plan",
                             color: Colors.white,
@@ -292,8 +282,6 @@ class DietScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.pedsScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.orenge400,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,

@@ -40,7 +40,7 @@ class DailyScreen extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         title: "Daily Tracking",
-        leading: CustomBackButton(),
+        automaticallyImplyLeading: false,
         actions: [
           IconButton(
             onPressed: () {},
@@ -55,7 +55,7 @@ class DailyScreen extends StatelessWidget {
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.fromLTRB(17.w, 43.w, 31.w, 9.w),
+          padding: EdgeInsets.fromLTRB(17.w, 43.w, 17.w, 9.w),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -109,7 +109,6 @@ class DailyScreen extends StatelessWidget {
 
               ///================Weight===============================
               CustomBox(
-                height: 122.h,
                 child: Column(
                   children: [
                     Row(
@@ -142,7 +141,6 @@ class DailyScreen extends StatelessWidget {
 
               ///================Sleep===============================
               CustomBox(
-                height: 200.h,
                 child: Column(
                   children: [
                     Row(
@@ -182,7 +180,6 @@ class DailyScreen extends StatelessWidget {
 
               ///================Sick===============================
               CustomBox(
-                height: 115.h,
                 child: Column(
                   children: [
                     Row(
@@ -234,7 +231,6 @@ class DailyScreen extends StatelessWidget {
 
               ///================Water===============================
               CustomBox(
-                height: 139.h,
                 child: Column(
                   children: [
                     Row(
@@ -278,7 +274,6 @@ class DailyScreen extends StatelessWidget {
 
               ///================energy &Well-being===============================
               CustomBox(
-                height: 500.h,
                 child: Column(
                   children: [
                     Row(
@@ -362,7 +357,7 @@ class DailyScreen extends StatelessWidget {
 
               ///==============Training ========================
               CustomBox(
-                height: 500.h,
+
                 child: Column(
                   children: [
                     Row(
@@ -534,7 +529,6 @@ class DailyScreen extends StatelessWidget {
 
               ///=========================Nutrition===================
               CustomBox(
-                height: 400.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -700,7 +694,6 @@ class DailyScreen extends StatelessWidget {
 
               ///==============Women========================
               CustomBox(
-                height: 372.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -793,7 +786,6 @@ class DailyScreen extends StatelessWidget {
 
               ///==============PED========================
               CustomBox(
-                height: 550.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -953,7 +945,6 @@ class DailyScreen extends StatelessWidget {
 
               ///==============Daily Notes========================
               CustomBox(
-                height: 100.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,

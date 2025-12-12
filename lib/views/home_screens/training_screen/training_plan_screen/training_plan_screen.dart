@@ -31,14 +31,12 @@ class TrainingPlanScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.trainingPlanTreamScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.green100,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          SizedBox(height: 18.h),
+                          SizedBox(height: 20.h),
                           CustomText(
                             text: "PLACEHOLDER",
                             color: Colors.white,
@@ -81,8 +79,6 @@ class TrainingPlanScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.trainingPlanTreamScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.blue700,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -143,14 +139,12 @@ class TrainingPlanScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.trainingPlanTreamScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.green100,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          SizedBox(height: 18.h),
+                          SizedBox(height: 14.h),
                           CustomText(
                             text: "PUSH FULLBODY",
                             color: Colors.white,
@@ -199,8 +193,6 @@ class TrainingPlanScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.trainingPlanTreamScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.blue700,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,

@@ -27,8 +27,7 @@ class WidgetContainer extends StatelessWidget {
         children: [
           Expanded(
             child: CustomBox(
-              height: 45.h,
-              width: 80.w,
+
               borderRadius: 50,
               borderColor: AppColors.tiya100,
               color: AppColors.tiya200,
@@ -69,8 +68,7 @@ class WidgetContainer extends StatelessWidget {
 
           Expanded(
             child: CustomBox(
-              height: 45.h,
-              width: 60.w,
+
               borderColor: AppColors.tiya100,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -90,8 +88,6 @@ class WidgetContainer extends StatelessWidget {
 
           Expanded(
             child: CustomBox(
-              height: 45.h,
-              width: 60.w,
               borderColor: AppColors.tiya100,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -111,8 +107,6 @@ class WidgetContainer extends StatelessWidget {
 
           Expanded(
             child: CustomBox(
-              height: 45.h,
-              width: 60.w,
               borderColor: AppColors.tiya100,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,

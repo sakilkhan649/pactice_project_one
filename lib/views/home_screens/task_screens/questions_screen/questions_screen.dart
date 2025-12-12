@@ -68,7 +68,6 @@ class QuestionsScreen extends StatelessWidget {
 
               ///==============Well-Being ========================
               CustomBox(
-                height: 340.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -115,7 +114,6 @@ class QuestionsScreen extends StatelessWidget {
 
               ///==============Nutrition ========================
               CustomBox(
-                height: 292.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -161,7 +159,6 @@ class QuestionsScreen extends StatelessWidget {
 
               ///==============Training ========================
               CustomBox(
-                height: 443.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -272,7 +269,6 @@ class QuestionsScreen extends StatelessWidget {
 
               ///==============Dailt Notes========================
               CustomBox(
-                height: 100.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,

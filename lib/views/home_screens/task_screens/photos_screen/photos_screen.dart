@@ -48,7 +48,6 @@ class PhotosScreen extends StatelessWidget {
 
               ///===============Select file===============
               Container(
-                height: 115.h,
                 width: 278.w,
                 padding: EdgeInsets.symmetric(horizontal: 84.w, vertical: 22.w),
                 decoration: BoxDecoration(
@@ -108,7 +107,6 @@ class PhotosScreen extends StatelessWidget {
 
               ///===============drop video file===============
               Container(
-                height: 115.h,
                 width: 278.w,
                 padding: EdgeInsets.symmetric(horizontal: 44.w, vertical: 22.w),
                 decoration: BoxDecoration(

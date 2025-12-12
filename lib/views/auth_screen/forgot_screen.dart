@@ -63,11 +63,10 @@ class ForgotScreen extends StatelessWidget {
                 Customtextfield(
                   prefixIcon: Padding(
                     padding: const EdgeInsets.all(10),
-                    child: SvgPicture.asset(
-                      AppIcons.emailicon,
-                      height: 8.h,
-                      width: 8.w,
-                    ),
+                    child: Icon(
+                    Icons.email_outlined,
+                    color: Colors.grey,
+                  )
                   ),
                   controller: emailController,
                   hintText: "enter your email",

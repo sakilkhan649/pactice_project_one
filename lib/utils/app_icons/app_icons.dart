@@ -53,5 +53,6 @@ class AppIcons {
   static const String dopdown_icon_down_one="$iconurl/dopdown_icon_down_one.svg";
   static const String dopdown_icon_down_two="$iconurl/dopdown_icon_down_two.svg";
   static const String bag_icon="$iconurl/bag_icon.svg";
+  static const String crosx_icon="$iconurl/crosx_icon.svg";
 
 }

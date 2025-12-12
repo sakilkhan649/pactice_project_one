@@ -9,6 +9,7 @@ import 'package:newproject/views/home_screens/training_screen/widgets/Custom_con
 import 'package:newproject/widgets/CustomBox_Container.dart';
 import '../../../../utils/app_icons/app_icons.dart';
 import '../../../../widgets/Custom_AppBar.dart';
+import '../../../../widgets/Custom_Dailog.dart';
 import '../../../../widgets/Custom_back_button.dart';
 
 class TrackMealsScreen extends StatelessWidget {
@@ -24,19 +25,29 @@ class TrackMealsScreen extends StatelessWidget {
           padding: EdgeInsets.fromLTRB(22.w, 30.w, 18.w, 80.w),
           child: Column(
             children: [
-              Align(
-                alignment: Alignment.topRight,
-                child: Container(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 30.w,
-                    vertical: 11.w,
+              InkWell(
+                onTap: (){
+                  showDialog(
+                    context: context,
+                    builder: (context) {
+                      return Customdialog();
+                    },
+                  );
+                },
+                child: Align(
+                  alignment: Alignment.topRight,
+                  child: Container(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 30.w,
+                      vertical: 11.w,
+                    ),
+                    decoration: BoxDecoration(
+                      color: Color(0xFF101021),
+                      border: Border.all(color: Color(0xFF6BA66B), width: 1),
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    child: CustomTexth(text: "+ Add"),
                   ),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF101021),
-                    border: Border.all(color: Color(0xFF6BA66B), width: 1),
-                    borderRadius: BorderRadius.circular(50),
-                  ),
-                  child: CustomTexth(text: "+ Add"),
                 ),
               ),
               SizedBox(height: 16.h),
@@ -85,7 +96,6 @@ class TrackMealsScreen extends StatelessWidget {
               SizedBox(height: 21.h),
 
               CustomContainer(
-                height: 120.h,
                 borderColor: AppColors.green300,
                 backgroundColor: AppColors.green400,
                 horizontalPadding: 20.w,
@@ -95,7 +105,6 @@ class TrackMealsScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CustomContainer(
-                      height: 86.h,
                       borderColor: AppColors.gray700,
                       backgroundColor: AppColors.gray700,
                       child: Column(
@@ -136,7 +145,6 @@ class TrackMealsScreen extends StatelessWidget {
               SizedBox(height: 15.h),
 
               CustomBox(
-                height: 129.h,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,

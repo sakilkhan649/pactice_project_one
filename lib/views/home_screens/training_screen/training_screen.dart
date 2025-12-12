@@ -38,18 +38,18 @@ class TrainingScreen extends StatelessWidget {
                             height: 20.h,
                             width: 20.w,
                           ),
-                          SizedBox(height: 10.h),
+                          // SizedBox(height: 10.h),
                           CustomText(
                             text: "12",
                             color: Colors.white,
-                            fontSize: 16,
+                            fontSize: 16.sp,
                             fontWeight: FontWeight.w400,
                           ),
-                          SizedBox(height: 10.h),
+                          // SizedBox(height: 10.h),
                           CustomText(
                             text: "PR’s this week",
                             color: Colors.white,
-                            fontSize: 12,
+                            fontSize: 12.sp,
                             fontWeight: FontWeight.w400,
                           ),
                         ],
@@ -73,14 +73,14 @@ class TrainingScreen extends StatelessWidget {
                           CustomText(
                             text: "4850 kg",
                             color: Colors.white,
-                            fontSize: 16,
+                            fontSize: 16.sp,
                             fontWeight: FontWeight.w400,
                           ),
                           SizedBox(height: 10.h),
                           CustomText(
                             text: "Weekly Volume",
                             color: Colors.white,
-                            fontSize: 10,
+                            fontSize: 10.sp,
                             fontWeight: FontWeight.w400,
                           ),
                         ],
@@ -104,14 +104,14 @@ class TrainingScreen extends StatelessWidget {
                           CustomText(
                             text: "5",
                             color: Colors.white,
-                            fontSize: 16,
+                            fontSize: 16.sp,
                             fontWeight: FontWeight.w400,
                           ),
                           SizedBox(height: 10.h),
                           CustomText(
                             text: "Trainings",
                             color: Colors.white,
-                            fontSize: 12,
+                            fontSize: 12.sp,
                             fontWeight: FontWeight.w400,
                           ),
                         ],
@@ -130,8 +130,6 @@ class TrainingScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.exercisesScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.green100,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -147,14 +145,14 @@ class TrainingScreen extends StatelessWidget {
                           CustomText(
                             text: "EXERCISES",
                             color: Colors.white,
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             fontWeight: FontWeight.w500,
                           ),
                           SizedBox(height: 6.h),
                           CustomText(
                             text: "Database",
                             color: AppColors.gray300,
-                            fontSize: 16,
+                            fontSize: 16.sp,
                             fontWeight: FontWeight.w400,
                           ),
                         ],
@@ -167,8 +165,6 @@ class TrainingScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.trainingPlanScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.blue700,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -184,14 +180,14 @@ class TrainingScreen extends StatelessWidget {
                           CustomText(
                             text: "TRAINING PLAN",
                             color: Colors.white,
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             fontWeight: FontWeight.w500,
                           ),
                           SizedBox(height: 6.h),
                           CustomText(
                             text: "Weekly Overview",
                             color: AppColors.gray300,
-                            fontSize: 16,
+                            fontSize: 16.sp,
                             fontWeight: FontWeight.w400,
                           ),
                         ],
@@ -210,8 +206,6 @@ class TrainingScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.historieScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.orenge300,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -227,14 +221,14 @@ class TrainingScreen extends StatelessWidget {
                           CustomText(
                             text: "HISTORIE",
                             color: Colors.white,
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             fontWeight: FontWeight.w500,
                           ),
                           SizedBox(height: 6.h),
                           CustomText(
                             text: "Past Workouts",
                             color: AppColors.gray300,
-                            fontSize: 16,
+                            fontSize: 16.sp,
                             fontWeight: FontWeight.w400,
                           ),
                         ],
@@ -249,31 +243,29 @@ class TrainingScreen extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(Routes.trainingSplitScreen);
                       },
-                      height: 155.h,
-                      width: 165.w,
                       borderColor: AppColors.orenge400,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          SizedBox(height: 18.h),
+                          SizedBox(height: 10.h),
                           SvgPicture.asset(
                             AppIcons.trainingspliticon,
                             height: 45.h,
                             width: 45.w,
                           ),
-                          SizedBox(height: 18.h),
+                          //SizedBox(height: 18.h),
                           CustomText(
                             text: "TRAINING SPLIT",
                             color: Colors.white,
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             fontWeight: FontWeight.w500,
                           ),
                           SizedBox(height: 6.h),
                           CustomText(
                             text: "View Training Split",
                             color: AppColors.gray300,
-                            fontSize: 16,
+                            fontSize: 16.sp,
                             fontWeight: FontWeight.w400,
                           ),
                         ],
