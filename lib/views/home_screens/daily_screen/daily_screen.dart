@@ -73,14 +73,14 @@ class DailyScreen extends StatelessWidget {
                           text: "Date:",
                           color: Colors.white,
                           fontWeight: FontWeight.w500,
-                          fontSize: 14,
+                          fontSize: 14.sp,
                         ),
                         SizedBox(height: 8.h),
                         CustomText(
                           text: "18.09.25",
                           color: Colors.white,
                           fontWeight: FontWeight.w500,
-                          fontSize: 14,
+                          fontSize: 14.sp,
                         ),
                       ],
                     ),
@@ -96,7 +96,7 @@ class DailyScreen extends StatelessWidget {
                       child: Text(
                         "Today",
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 16.sp,
                           color: AppColors.tiya100,
                           fontWeight: FontWeight.normal,
                         ),
@@ -123,7 +123,7 @@ class DailyScreen extends StatelessWidget {
                           text: "Weight",
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                          fontSize: 18.sp,
                         ),
                       ],
                     ),
@@ -155,7 +155,7 @@ class DailyScreen extends StatelessWidget {
                           text: "Sleep",
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                          fontSize: 18.sp,
                         ),
                       ],
                     ),
@@ -194,7 +194,7 @@ class DailyScreen extends StatelessWidget {
                           text: "Sick",
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                          fontSize: 18.sp,
                         ),
                       ],
                     ),
@@ -288,7 +288,7 @@ class DailyScreen extends StatelessWidget {
                           text: "energy &Well-being",
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                          fontSize: 18.sp,
                         ),
                       ],
                     ),
@@ -372,7 +372,7 @@ class DailyScreen extends StatelessWidget {
                           text: "Training",
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                          fontSize: 18.sp,
                         ),
                       ],
                     ),
@@ -400,7 +400,7 @@ class DailyScreen extends StatelessWidget {
                       obscureText: false,
                       textInputType: TextInputType.text,
                       contentPadding: EdgeInsets.symmetric(
-                        horizontal: 10,
+                        horizontal: 10.w,
                         vertical: 0,
                       ),
                     ),
@@ -480,7 +480,7 @@ class DailyScreen extends StatelessWidget {
                       obscureText: false,
                       textInputType: TextInputType.text,
                       contentPadding: EdgeInsets.symmetric(
-                        horizontal: 10,
+                        horizontal: 10.w,
                         vertical: 0,
                       ),
                     ),
@@ -545,7 +545,7 @@ class DailyScreen extends StatelessWidget {
                           text: "Nutrition",
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                          fontSize: 18.sp,
                         ),
                       ],
                     ),
@@ -567,7 +567,7 @@ class DailyScreen extends StatelessWidget {
                                 obscureText: false,
                                 textInputType: TextInputType.text,
                                 contentPadding: EdgeInsets.symmetric(
-                                  horizontal: 10,
+                                  horizontal: 10.w,
                                   vertical: 0,
                                 ),
                               ),
@@ -642,7 +642,7 @@ class DailyScreen extends StatelessWidget {
                                 obscureText: false,
                                 textInputType: TextInputType.text,
                                 contentPadding: EdgeInsets.symmetric(
-                                  horizontal: 10,
+                                  horizontal: 10.w,
                                   vertical: 0,
                                 ),
                               ),
@@ -681,7 +681,7 @@ class DailyScreen extends StatelessWidget {
                         obscureText: false,
                         textInputType: TextInputType.text,
                         contentPadding: EdgeInsets.symmetric(
-                          horizontal: 10,
+                          horizontal: 10.w,
                           vertical: 0,
                         ),
                       ),
@@ -710,7 +710,7 @@ class DailyScreen extends StatelessWidget {
                           text: "Women",
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                          fontSize: 18.sp,
                         ),
                       ],
                     ),
@@ -741,7 +741,7 @@ class DailyScreen extends StatelessWidget {
                         obscureText: false,
                         textInputType: TextInputType.text,
                         contentPadding: EdgeInsets.symmetric(
-                          horizontal: 10,
+                          horizontal: 10.w,
                           vertical: 0,
                         ),
                       ),
@@ -827,7 +827,7 @@ class DailyScreen extends StatelessWidget {
                     CustomText(
                       text: "side effects Notes",
                       color: Colors.white,
-                      fontSize: 18,
+                      fontSize: 18.sp,
                     ),
                     SizedBox(height: 8.h),
                     Customtextfield(
@@ -849,7 +849,7 @@ class DailyScreen extends StatelessWidget {
                           text: "Blood Pressure(Everybody)",
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                          fontSize: 18.sp,
                         ),
                       ],
                     ),
@@ -869,7 +869,7 @@ class DailyScreen extends StatelessWidget {
                         obscureText: false,
                         textInputType: TextInputType.text,
                         contentPadding: EdgeInsets.symmetric(
-                          horizontal: 10,
+                          horizontal: 10.w,
                           vertical: 0,
                         ),
                       ),
@@ -878,7 +878,7 @@ class DailyScreen extends StatelessWidget {
                     CustomText(
                       text: "Diastolic",
                       color: Colors.white,
-                      fontSize: 18,
+                      fontSize: 18.sp,
                     ),
                     SizedBox(height: 5.h),
                     Container(
@@ -890,7 +890,7 @@ class DailyScreen extends StatelessWidget {
                         obscureText: false,
                         textInputType: TextInputType.text,
                         contentPadding: EdgeInsets.symmetric(
-                          horizontal: 10,
+                          horizontal: 10.w,
                           vertical: 0,
                         ),
                       ),
@@ -899,7 +899,7 @@ class DailyScreen extends StatelessWidget {
                     CustomText(
                       text: "Resting heart rate",
                       color: Colors.white,
-                      fontSize: 18,
+                      fontSize: 18.sp,
                     ),
                     SizedBox(height: 5.h),
                     Container(
@@ -911,7 +911,7 @@ class DailyScreen extends StatelessWidget {
                         obscureText: false,
                         textInputType: TextInputType.text,
                         contentPadding: EdgeInsets.symmetric(
-                          horizontal: 10,
+                          horizontal: 10.w,
                           vertical: 0,
                         ),
                       ),
@@ -920,7 +920,7 @@ class DailyScreen extends StatelessWidget {
                     CustomText(
                       text: "blood glucose",
                       color: Colors.white,
-                      fontSize: 18,
+                      fontSize: 18.sp,
                     ),
                     SizedBox(height: 5.h),
                     Container(
@@ -932,7 +932,7 @@ class DailyScreen extends StatelessWidget {
                         obscureText: false,
                         textInputType: TextInputType.text,
                         contentPadding: EdgeInsets.symmetric(
-                          horizontal: 10,
+                          horizontal: 10.w,
                           vertical: 0,
                         ),
                       ),
@@ -952,7 +952,7 @@ class DailyScreen extends StatelessWidget {
                     CustomText(
                       text: "Daily Notes",
                       color: Colors.white,
-                      fontSize: 18,
+                      fontSize: 18.sp,
                     ),
                     SizedBox(height: 8.h),
                     Customtextfield(

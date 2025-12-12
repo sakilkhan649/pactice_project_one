@@ -38,14 +38,14 @@ class TrainingScreen extends StatelessWidget {
                             height: 20.h,
                             width: 20.w,
                           ),
-                          // SizedBox(height: 10.h),
+                           SizedBox(height: 10.h),
                           CustomText(
                             text: "12",
                             color: Colors.white,
                             fontSize: 16.sp,
                             fontWeight: FontWeight.w400,
                           ),
-                          // SizedBox(height: 10.h),
+                           SizedBox(height: 6.h),
                           CustomText(
                             text: "PR’s this week",
                             color: Colors.white,
@@ -248,13 +248,13 @@ class TrainingScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          SizedBox(height: 10.h),
+                          SizedBox(height: 13.h),
                           SvgPicture.asset(
                             AppIcons.trainingspliticon,
                             height: 45.h,
                             width: 45.w,
                           ),
-                          //SizedBox(height: 18.h),
+                          SizedBox(height: 18.h),
                           CustomText(
                             text: "TRAINING SPLIT",
                             color: Colors.white,

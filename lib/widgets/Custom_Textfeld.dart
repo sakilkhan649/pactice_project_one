@@ -66,7 +66,7 @@ class Customtextfield extends StatelessWidget {
         prefixIcon: prefixIcon,
         errorStyle: TextStyle(color: Colors.red, fontSize: 12.sp),
         contentPadding:contentPadding ?? EdgeInsets.symmetric(
-          horizontal: 15.w,
+          horizontal: 10.w,
           vertical: 15.h,
         ),
       ),
