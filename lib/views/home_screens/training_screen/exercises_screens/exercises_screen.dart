@@ -58,7 +58,7 @@ class ExercisesScreen extends StatelessWidget {
                       child: Container(
                         margin: EdgeInsets.only(right: 8.w),
                         padding: EdgeInsets.symmetric(
-                          horizontal: 22.w,
+                          horizontal: 28.5.w,
                           vertical: 8.h,
                         ),
                         decoration: BoxDecoration(
